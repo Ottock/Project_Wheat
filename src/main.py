@@ -104,7 +104,7 @@ while True:
                 # Envia o e-mail com a foto
                 try:
                     sendEmail(
-                        "", # Email Reciver
+                        "", # e-mail que vai receber
                         "Pragas Identificadas",
                         f""">> {time.ctime(time.time())}\n
                                   \nPragas identificadas: \n

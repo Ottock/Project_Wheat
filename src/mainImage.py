@@ -19,17 +19,17 @@ except:
 
 # Path da imagem para ser testada pelo modelo
 #image_path = "database/Metopolophium/18.jpg"
-#image_path = "database/Rhopalosiphum padi/18.jpg"
+#image_path = "src/database/Rhopalosiphum padi/11.jpg"
 #image_path = "database/Schizaphis graminum/18.jpg"
-#image_path = "database/Sipha maydis/6.jpg"
-image_path = "database/Sitobion avenae/3.jpg"
+image_path = "src/database/Sipha maydis/7.jpg"
+#image_path = "database/Sitobion avenae/3.jpg"
 
 #image_path = "../database/teste.png"
 image = cv2.imread(image_path)
 
 # Testa se a imagem pode ser acessada
 if image is None:
-    print(strColored(f">> ERRO: Não foi possível carregar a imagem em: {image_path}"))
+    print(strColored(f">> ERRO: Não foi possível carregar a imagem em: {image_path}", 'red'))
 else:
     try:
         # Previsões feitas pelo modelo
@@ -101,7 +101,7 @@ else:
 
         # Envia o e-mail com a imagem anexada
         sendEmail(
-            "ottokuchmargo@gmail.com", # Email Reciver
+            "", # e-mail que vai receber
             "Pragas Identificadas",
             f">> {time.ctime(currentTime)}\n" +
             f"\nPragas identificadas: \n" +
