@@ -96,7 +96,7 @@ while True:
                     cv2.putText(frame, text, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
 
                 # Exibe a imagem com as anotações para verificação
-                cv2.imshow("Project Wheat 6.0 - Detection", frame)
+                #cv2.imshow("Project Wheat 6.0 - Detection", frame)
 
                 # Salva a imagem capturada
                 image_path = captureImage(frame, "PragaDetectada.jpg")

@@ -18,10 +18,10 @@ except:
     exit(0)
 
 # Path da imagem para ser testada pelo modelo
-#image_path = "database/Metopolophium/18.jpg"
+image_path = "database/Metopolophium/18.jpg"
 #image_path = "src/database/Rhopalosiphum padi/11.jpg"
 #image_path = "database/Schizaphis graminum/18.jpg"
-image_path = "src/database/Sipha maydis/7.jpg"
+#image_path = "src/database/Sipha maydis/7.jpg"
 #image_path = "database/Sitobion avenae/3.jpg"
 
 #image_path = "../database/teste.png"
