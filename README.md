@@ -55,10 +55,10 @@ O ambiente virtual `.venv` armazena todas as bibliotecas necessárias para o pro
 - [opencv-python 4.10.0.84](https://pypi.org/project/opencv-python/)
 - [roboflow 1.1.36](https://pypi.org/project/roboflow/)
 
-### Archives
+### archives
 A pasta `archives` contém pesquisas e materiais de referência utilizados no início do projeto, abordando temas como a tecnologia IoT e o ciclo de vida do trigo, além de outras informações essenciais.
 
-### Database
+### database
 A pasta `database` organiza os dados das cinco espécies de pragas selecionadas para o modelo de identificação. Cada sub-pasta armazena informações relevantes para o treinamento do modelo. As espécies são:
 
 1. **Metopolophium**: Pulgão-verde-pálido (*Metopolophium dirhodum*)  
@@ -80,10 +80,10 @@ A pasta `models` contém os testes relacionados ao modelo de detecção do Robof
 ### src
 A pasta `src` armazena o código-fonte principal da aplicação.
 
-### Study
+### study
 A pasta `study` inclui materiais de estudo que auxiliaram no desenvolvimento do projeto, como tutoriais sobre o uso da biblioteca OpenCV e a integração com a plataforma Roboflow.
 
-### Tests
+### tests
 A pasta `tests` contém scripts e arquivos de teste que verificam a funcionalidade correta de diversas partes do sistema, garantindo que o projeto funcione conforme o esperado.
 
 ### Instalação de Dependências
