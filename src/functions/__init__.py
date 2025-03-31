@@ -4,6 +4,7 @@
 import os
 from email.mime.image import MIMEImage
 import cv2
+import auth
 import smtplib
 from roboflow import Roboflow
 from email.mime.multipart import MIMEMultipart
@@ -13,23 +14,18 @@ from email.mime.text import MIMEText
 def initRoboflow(version):
     """
     initRoboflow(version): Função que inicializa o Roboflow dentro do programa.
-    Para outros projetos, recomenda-se mudar as Strings que possuem "api_key", "project_name" e "project".
 
     :param version: Versão do modelo Roboflow a ser utilizada.
     :return: Modelo associado à versão do parâmetro, se a versão for válida. Caso contrário, None.
     """
-    # Roboflow client API key
-    api_key = "8UjXP8kvalxT275T5XgN"
-    workspace_name = "projeto-ic"
-    project_name = "ic-pragas"
 
     try:
         # Inicializa o cliente Roboflow
-        rf = Roboflow(api_key=api_key)
+        rf = Roboflow(auth.API)
 
         # Acessa o projeto e workspace
-        workspace = rf.workspace(workspace_name)
-        project = workspace.project(project_name)
+        workspace = rf.workspace(auth.WORKSPACE)
+        project = workspace.project(auth.project)
 
         # Acessa a versão do modelo
         model_version = project.version(version)
