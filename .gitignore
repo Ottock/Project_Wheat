@@ -1,0 +1,27 @@
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+
+# Arquivos de configuração sensíveis
+.env
+*.env
+
+# Arquivos temporários
+*.pyc
+*.pyo
+*.log
+*.sqlite3
+*.db
+
+# Arquivos de imagem/snapshot gerados
+PragaDetectada.jpg
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# VS Code configs (caso use)
+.vscode/
